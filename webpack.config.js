@@ -1,12 +1,13 @@
 const path = require('path');
 console.log('Production: ', process.env.NODE_ENV); // true
+debugger;
 module.exports = {
   entry: ["./src/util/polyfill.ts", './src/index.ts'],
   devtool: 'inline-source-map',
   mode: "development",
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'webpack-numbers.js',
+    filename: 'map.js',
     library: {
         name: 'mtdpMap',
         type: 'umd',

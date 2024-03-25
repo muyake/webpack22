@@ -2,7 +2,7 @@
   "name": "webpackstduy22",
   "version": "1.0.2",
   "description": "",
-  "main": "dist/webpack-numbers.js",
+  "main": "dist/map.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env NODE_ENV=production  webpack",
