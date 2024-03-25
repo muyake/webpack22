@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.21",
-    "nvm": "0.0.4"
+    "nvm": "0.0.4",
+    "webpackstduy22": "^1.0.1"
   }
 }
