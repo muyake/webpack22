@@ -1,4 +1,4 @@
-import EventEmitter from './util/event_emitter';
+import EventEmitter from '_util/event_emitter';
 import './map.scss';
 
 export default class Map extends EventEmitter{

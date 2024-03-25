@@ -1,5 +1,9 @@
 {
     "compilerOptions": {
+      "baseUrl": "./",
+      "paths": {
+        "_util/*": ["src/util/*"]
+      },
       "outDir": "./dist/",
       "noImplicitAny": true,
       "module": "es6",
