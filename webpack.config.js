@@ -1,6 +1,7 @@
 const path = require('path');
+const webpack = require("webpack");
 const minifyPrivatesTransformer = require('ts-transformer-minify-privates').default;
-
+let isProduction = process.env.NODE_ENV === 'production';
 console.log('Production: ', process.env.NODE_ENV); // true
 
 module.exports = {
@@ -45,6 +46,11 @@ module.exports = {
       }
     ],
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      '__DEV__': JSON.stringify(!isProduction),
+    })
+  ],
   resolve: {
     alias: {
       '_util': path.resolve(__dirname, './src/util')

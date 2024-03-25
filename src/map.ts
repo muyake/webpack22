@@ -6,6 +6,10 @@ export default class Map extends EventEmitter{
         super();
     }
     public getCenter(){
+        // @ts-ignore
+        if(!__DEV__){
+            console.log("我是dev");
+        }
         return 22;
     }
     private _getZoom(){
