@@ -29,6 +29,7 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "nvm": "0.0.4",
+    "mini-css-extract-plugin": "^2.8.1",
     "promise-polyfill": "8.3.0",
     "webpack-merge": "^5.10.0"
   }
