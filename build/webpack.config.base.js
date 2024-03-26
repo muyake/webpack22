@@ -40,6 +40,11 @@ module.exports = {
           // // 将 JS 字符串生成为 style 节点
           // 'style-loader',
           MiniCssExtractPlugin.loader, 
+
+          // {
+          //   loader: path.resolve('path/to/loader.js'),
+          //   options: {/* ... */}
+          // },
           // 将 CSS 转化成 CommonJS 模块
           'css-loader',
           // 将 Sass 编译成 CSS
@@ -58,7 +63,7 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      '_util': path.resolve(__dirname, './src/util')
+      '_util': path.resolve(__dirname, '../src/util')
     },
     extensions: ['.tsx', '.ts', '.js'],
   },
